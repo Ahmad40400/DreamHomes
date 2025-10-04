@@ -41,12 +41,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $mail->isSMTP();
             $mail->Host       = 'smtp.gmail.com';
             $mail->SMTPAuth   = true;
-            $mail->Username   = 'aaallliii77992186@gmail.com';       // ✅ apna Gmail likho
-            $mail->Password   = 'zjks ggym cxwd kynz';    // ✅ Gmail App Password likho
+            $mail->Username   = '';       // ✅ apna Gmail likho
+            $mail->Password   = '';    // ✅ Gmail App Password likho
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
             $mail->Port       = 587;
 
-            $mail->setFrom('aallliii77992186@gmail.com', 'DreamHomes');
+            $mail->setFrom('', 'DreamHomes');
             $mail->addAddress($email, $username);
 
             $mail->isHTML(true);
