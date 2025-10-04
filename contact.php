@@ -30,14 +30,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $mail->isSMTP();
         $mail->Host       = 'smtp.gmail.com';
         $mail->SMTPAuth   = true;
-        $mail->Username   = 'aaallliii77992186@gmail.com';  // 🔑 Your Gmail
-        $mail->Password   = 'omke jjrt lrfy fehu';     // 🔑 App password
+        $mail->Username   = '';  // 🔑 Your Gmail
+        $mail->Password   = '';     // 🔑 App password
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-        $mail->Port       = 587;
+        $mail->Port       = 000;
 
         // Sender & recipient
         $mail->setFrom($email, $name);  // User who filled form
-        $mail->addAddress('m.ahmad20092003@gmail.com', 'DreamHomes Admin'); // Where it will be sent
+        $mail->addAddress('', 'DreamHomes Admin'); // Where it will be sent
         $mail->addReplyTo($email, $name);
 
         // Content
